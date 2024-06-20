@@ -1,15 +1,64 @@
-  <html>
-    <p style="border:2px solid rgb(222,123,144);"></p>
-    <body style="background-color:aquamarine;">
-    <h1 style="font-family:'Courier New'">&nbsp&nbspThis is Fuxuan's Portfolio
-    </h1>
-
-  <p style="border:2px solid rgb(222,123,144);"></p>
-  <p style="font-family:'courier new'">Links:</body>
-  <p style="font-family:'Courier New'">&nbspLink 01: http://127.0.0.1:3000/index.html</body>
-    <p style="font-family:'Courier New'">&nbspLink 02: http://127.0.0.1:3000/Page 02.html</body>
-      <p style="font-family:'Courier New'">&nbspLink 03: http://127.0.0.1:3000/Page 03.html</body>
-        <p style="font-family:'Courier New'">&nbspLink 04: http://127.0.0.1:3000/Page 04.html</body>
-
-    
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuxuan's Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            background-color: #2c3e50;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #ecf0f1;
+        }
+        h1 {
+            color: #ecf0f1;
+            border-bottom: 3px solid #e74c3c;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+        }
+       
+        h1::before {
+            left: -40px;
+        }
+        h1::after {
+            right: -40px;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 1em;
+        }
+        .button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Fuxuan's Portfolio</h1>
+    <div class="buttons">
+        <button class="button" onclick="window.location.href='Page 02.html'">Go to Page 2</button>
+        <button class="button" onclick="window.location.href='Page 03.html'">Go to Page 3</button>
+        <button class="button" onclick="window.location.href='Page 04.html'">Go to Page 4</button>
+    </div>
+</body>
+</html>

@@ -1,9 +1,68 @@
-<html>
-    <p style="border:2px solid rgb(80, 180, 71);"></p>
-    <body style="background-color:rgb(66, 249, 246);">
-    </body>
-    <h1 style="font-family:'Courier New'">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|Page 02|
-    </h1>
-    <p style="border:2px solid rgb(80, 180, 71);"></p>
-
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 02</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            background-color: #345e51;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #ecf0f1;
+        }
+        h1 {
+            color: #ecf0f1;
+            border-bottom: 3px solid #27ae60;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+        }
+        h1::before, h1::after {
+            content: '♦';
+            font-size: 2em;
+            color: #27ae60;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        h1::before {
+            left: -40px;
+        }
+        h1::after {
+            right: -40px;
+        }
+        .decorative-line {
+            border: 2px solid #27ae60;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px 0;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>| Page 02 |</h1>
+    <div class="decorative-line"></div>
+    <div class="content">
+        <p>Welcome to Page 02! </p>
+    </div>
+    <div class="decorative-line"></div>
+</body>
+</html>
